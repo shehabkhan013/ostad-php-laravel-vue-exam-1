@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.profile-card {
+    width: 380px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.profile-content-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.profile-content-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.profile-content h1 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.profile-content h2 {
+    font-size: 18px;
+    color: #646464;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    font-size: 14px;
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.profile-achivment {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.profile-achivment-box h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #464646;
+}
+.profile-achivment-box p {
+    font-size: 24px;
+    margin-bottom: 0;
+    color: #111;
+    font-weight: 700;
+}
+
+.contact-info a {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 43px;
+    transition: all .3s ease-in-out;
+    display: block;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 20px 0px 0px;
+}
+
+.contact-info .contact-mail {
+  border: 2px solid #111;
+  color: #111;
+  background-color: #fff;
+}
+.contact-info .contact-mail:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.contact-info .connect-mobile {
+  background-color: #111;
+  color: #ededed;
+  border: 2px solid #111;
+}
+
+.contact-info .connect-mobile:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-content">
+            <div class="profile-content-img">
+                <img src="https://i.ibb.co/9vzcbmJ/shehab.jpg" alt="A. M. Shehab">
+            </div>
+            <h1>A. M. Shehab</h1>
+            <h2>Software Developer</h2>
+            <p>Passionate developer with experience in creating modern web applications.</p>
+            <div class="profile-achivment">
+                <div class="profile-achivment-box">
+                    <h3>Projects</h3>
+                    <p>20+</p>
+                </div>
+                <div class="profile-achivment-box">
+                    <h3>Following</h3>
+                    <p>1.5k</p>
+                </div>
+                <div class="profile-achivment-box">
+                    <h3>Followers</h3>
+                    <p>5.5k</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a class="contact-mail" href="mailto:shehabkhan013@gmail.com">Email</a>
+                <a class="connect-mobile" href="tel:01777538187">Mobile</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
